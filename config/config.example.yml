@@ -10,7 +10,7 @@ redis:
   db: 0
   password:
 minio:
-  endpoint: 49.232.167.227:30090
+  endpoint: 127.0.0.1:9000
   bucket: ame-test
   tls: false
   access_key: minioadmin
