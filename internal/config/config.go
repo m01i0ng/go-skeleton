@@ -31,6 +31,11 @@ type Config struct {
     AccessKey string `yaml:"access_key"`
     SecretKey string `yaml:"secret_key"`
   }
+  Mqtt struct {
+    Broker   string `yaml:"broker"`
+    User     string `yaml:"user"`
+    Password string `yaml:"password"`
+  }
 }
 
 func New() (*Config, error) {

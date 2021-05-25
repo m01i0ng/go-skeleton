@@ -30,6 +30,10 @@ func InitApp() (*app.App, error) {
 	if err != nil {
 		return nil, err
 	}
-	appApp := app.NewApp(client, sqlDB, minioClient)
+	mqttClient, err := db.NewMqtt(configConfig)
+	if err != nil {
+		return nil, err
+	}
+	appApp := app.NewApp(client, sqlDB, minioClient, mqttClient)
 	return appApp, nil
 }

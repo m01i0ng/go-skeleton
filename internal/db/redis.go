@@ -6,6 +6,7 @@ import (
 
   "github.com/go-redis/redis/v8"
   "github.com/google/wire"
+  "github.com/kataras/golog"
   "github.com/m01i0ng/go-skeleton/internal/config"
 )
 
@@ -23,6 +24,8 @@ func NewRedis(c *config.Config) (*redis.Client, error) {
   if ping := client.Ping(ctx); ping.Err() != nil {
     return nil, ping.Err()
   }
+
+  golog.Infof("Redis connected to: %s", fmt.Sprintf("%s:%d", rc.Host, rc.Port))
 
   return client, nil
 }

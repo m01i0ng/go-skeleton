@@ -23,18 +23,19 @@ func NewMinio(c *config.Config) (*minio.Client, error) {
     return nil, err
   }
 
-  ctx := context.Background()
+  golog.Infof("Minio connected to: %s", m.Endpoint)
 
-  err = client.MakeBucket(ctx, m.Bucket, minio.MakeBucketOptions{})
+  ctx := context.Background()
+  exists, err := client.BucketExists(ctx, m.Bucket)
   if err != nil {
-    bucketExists, err := client.BucketExists(ctx, m.Bucket)
-    if err == nil && bucketExists {
-      golog.Infof("bucket exists: %s", m.Bucket)
-    } else {
+    return nil, err
+  }
+
+  if !exists {
+    err := client.MakeBucket(ctx, m.Bucket, minio.MakeBucketOptions{})
+    if err != nil {
       return nil, err
     }
-  } else {
-    golog.Infof("bucket make ok: %s", m.Bucket)
   }
 
   return client, err

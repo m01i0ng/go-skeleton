@@ -15,3 +15,7 @@ minio:
   tls: false
   access_key: minioadmin
   secret_key: minioadmin
+mqtt:
+  broker: tcp://
+  user: test
+  password: test

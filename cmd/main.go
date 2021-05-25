@@ -1,13 +1,16 @@
 package main
 
-import "github.com/m01i0ng/go-skeleton/di"
+import (
+  "github.com/kataras/golog"
+  "github.com/m01i0ng/go-skeleton/di"
+)
 
 func main() {
   app, err := di.InitApp()
   if err != nil {
-    return
+    golog.Fatal(err)
   }
-  app.Redis.String()
 
+  app.Mqtt.IsConnected()
   select {}
 }

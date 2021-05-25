@@ -10,5 +10,5 @@ import (
 )
 
 func InitApp() (*app.App, error) {
-  panic(wire.Build(config.Provider, db.MysqlProvider, db.RedisProvider, db.MinioProvider, app.NewApp))
+  panic(wire.Build(config.Provider, db.MysqlProvider, db.RedisProvider, db.MinioProvider, db.MqttProvider, app.NewApp))
 }
