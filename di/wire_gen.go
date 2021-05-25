@@ -3,16 +3,17 @@
 //go:generate go run github.com/google/wire/cmd/wire
 //+build !wireinject
 
-package main
+package di
 
 import (
+	"github.com/m01i0ng/go-skeleton/app"
 	"github.com/m01i0ng/go-skeleton/internal/config"
 	"github.com/m01i0ng/go-skeleton/internal/db"
 )
 
 // Injectors from wire.go:
 
-func InitApp() (*App, error) {
+func InitApp() (*app.App, error) {
 	configConfig, err := config.New()
 	if err != nil {
 		return nil, err
@@ -25,6 +26,10 @@ func InitApp() (*App, error) {
 	if err != nil {
 		return nil, err
 	}
-	app := NewApp(client, sqlDB)
-	return app, nil
+	minioClient, err := db.NewMinio(configConfig)
+	if err != nil {
+		return nil, err
+	}
+	appApp := app.NewApp(client, sqlDB, minioClient)
+	return appApp, nil
 }

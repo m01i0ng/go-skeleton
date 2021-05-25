@@ -1,21 +1,24 @@
-package main
+package app
 
 import (
   "database/sql"
   "time"
 
   "github.com/go-redis/redis/v8"
+  "github.com/minio/minio-go/v7"
 )
 
 type App struct {
-  redis *redis.Client
-  mysql *sql.DB
+  Redis *redis.Client
+  Mysql *sql.DB
+  Minio *minio.Client
 }
 
-func NewApp(redis *redis.Client, mysql *sql.DB) *App {
+func NewApp(redis *redis.Client, mysql *sql.DB, minio *minio.Client) *App {
   app := &App{
-    redis: redis,
-    mysql: mysql,
+    Redis: redis,
+    Mysql: mysql,
+    Minio: minio,
   }
 
   app.firstHeartBeat()

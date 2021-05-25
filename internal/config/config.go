@@ -24,6 +24,13 @@ type Config struct {
     Db       int    `yaml:"db"`
     Password string `yaml:"password"`
   }
+  Minio struct {
+    Endpoint  string `yaml:"endpoint"`
+    Bucket    string `yaml:"bucket"`
+    Tls       bool   `yaml:"tls"`
+    AccessKey string `yaml:"access_key"`
+    SecretKey string `yaml:"secret_key"`
+  }
 }
 
 func New() (*Config, error) {

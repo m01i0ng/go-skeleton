@@ -1,12 +1,16 @@
 package main
 
+import (
+  "github.com/m01i0ng/go-skeleton/app"
+)
+
 type Executor struct {
-  app *App
+  app *app.App
 }
 
-func NewExecutor(app *App) *Executor {
+func NewExecutor(app *app.App) (*Executor, error) {
   e := &Executor{app: app}
-  return e
+  return e, nil
 }
 
 func (e *Executor) Exec() {

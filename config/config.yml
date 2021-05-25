@@ -9,3 +9,9 @@ redis:
   port: 6379
   db: 0
   password:
+minio:
+  endpoint: 49.232.167.227:30090
+  bucket: ame-test
+  tls: false
+  access_key: minioadmin
+  secret_key: minioadmin
