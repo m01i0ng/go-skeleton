@@ -5,7 +5,7 @@ go 1.16
 require (
 	github.com/eclipse/paho.mqtt.golang v1.3.4
 	github.com/fatih/color v1.11.0 // indirect
-	github.com/go-redis/redis/v8 v8.9.0
+	github.com/go-redis/redis/v8 v8.10.0
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/goccy/go-yaml v1.8.9
 	github.com/google/wire v0.5.0
