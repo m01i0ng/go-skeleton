@@ -10,6 +10,6 @@ require (
 	github.com/goccy/go-yaml v1.8.9
 	github.com/google/wire v0.5.0
 	github.com/kataras/golog v0.1.7
-	github.com/minio/minio-go/v7 v7.0.10
+	github.com/minio/minio-go/v7 v7.0.11
 	golang.org/x/sys v0.0.0-20210521203332-0cec03c779c1 // indirect
 )
