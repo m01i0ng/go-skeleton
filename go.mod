@@ -10,6 +10,6 @@ require (
 	github.com/goccy/go-yaml v1.9.5
 	github.com/google/wire v0.5.0
 	github.com/kataras/golog v0.1.7
-	github.com/minio/minio-go/v7 v7.0.22
+	github.com/minio/minio-go/v7 v7.0.23
 	github.com/stretchr/testify v1.7.0 // indirect
 )
