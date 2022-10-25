@@ -3,7 +3,7 @@ module github.com/m01i0ng/go-skeleton
 go 1.16
 
 require (
-	github.com/eclipse/paho.mqtt.golang v1.4.1
+	github.com/eclipse/paho.mqtt.golang v1.4.2
 	github.com/fatih/color v1.11.0 // indirect
 	github.com/go-redis/redis/v8 v8.11.5
 	github.com/go-sql-driver/mysql v1.6.0
