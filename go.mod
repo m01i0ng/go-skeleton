@@ -10,5 +10,5 @@ require (
 	github.com/goccy/go-yaml v1.9.6
 	github.com/google/wire v0.5.0
 	github.com/kataras/golog v0.1.8
-	github.com/minio/minio-go/v7 v7.0.43
+	github.com/minio/minio-go/v7 v7.0.45
 )
