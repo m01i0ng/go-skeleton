@@ -11,7 +11,7 @@ require (
 	github.com/goccy/go-yaml v1.11.2
 	github.com/google/wire v0.5.0
 	github.com/kataras/golog v0.1.11
-	github.com/minio/minio-go/v7 v7.0.63
+	github.com/minio/minio-go/v7 v7.0.64
 )
 
 require (
@@ -59,13 +59,13 @@ require (
 	github.com/stretchr/objx v0.1.0 // indirect
 	github.com/stretchr/testify v1.7.0 // indirect
 	github.com/yuin/goldmark v1.4.13 // indirect
-	golang.org/x/crypto v0.12.0 // indirect
+	golang.org/x/crypto v0.14.0 // indirect
 	golang.org/x/mod v0.8.0 // indirect
-	golang.org/x/net v0.14.0 // indirect
+	golang.org/x/net v0.17.0 // indirect
 	golang.org/x/sync v0.1.0 // indirect
 	golang.org/x/sys v0.13.0 // indirect
-	golang.org/x/term v0.11.0 // indirect
-	golang.org/x/text v0.12.0 // indirect
+	golang.org/x/term v0.13.0 // indirect
+	golang.org/x/text v0.13.0 // indirect
 	golang.org/x/tools v0.6.0 // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
 	google.golang.org/protobuf v1.26.0 // indirect
