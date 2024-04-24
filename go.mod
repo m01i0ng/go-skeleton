@@ -1,8 +1,8 @@
 module github.com/m01i0ng/go-skeleton
 
-go 1.21
+go 1.22
 
-toolchain go1.21.4
+toolchain go1.22.2
 
 require (
 	github.com/eclipse/paho.mqtt.golang v1.4.3
@@ -10,7 +10,7 @@ require (
 	github.com/go-sql-driver/mysql v1.7.1
 	github.com/goccy/go-yaml v1.11.3
 	github.com/google/wire v0.6.0
-	github.com/kataras/golog v0.1.11
+	github.com/kataras/golog v0.1.12
 	github.com/minio/minio-go/v7 v7.0.67
 )
 
