@@ -6,7 +6,7 @@ toolchain go1.21.4
 
 require (
 	github.com/eclipse/paho.mqtt.golang v1.4.3
-	github.com/go-redis/redis/v8 v8.11.5
+	github.com/go-redis/redis/v9 v9.7.0
 	github.com/go-sql-driver/mysql v1.7.1
 	github.com/goccy/go-yaml v1.11.3
 	github.com/google/wire v0.6.0
