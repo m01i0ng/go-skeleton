@@ -43,6 +43,8 @@ github.com/json-iterator/go v1.1.12 h1:PV8peI4a0ysnczrg+LtxykD8LfKY9ML6u2jnxaEnr
 github.com/json-iterator/go v1.1.12/go.mod h1:e30LSqwooZae/UwlEbR2852Gd8hjQvJoHmT4TnhNGBo=
 github.com/kataras/golog v0.1.11 h1:dGkcCVsIpqiAMWTlebn/ZULHxFvfG4K43LF1cNWSh20=
 github.com/kataras/golog v0.1.11/go.mod h1:mAkt1vbPowFUuUGvexyQ5NFW6djEgGyxQBIARJ0AH4A=
+github.com/kataras/golog v0.2.0 h1:8Y/VWjUijivCwlY09DGrLIKAfsEoXRqbrhvqyeCz1uw=
+github.com/kataras/golog v0.2.0/go.mod h1:ChIl77VUBE6SwvowRiPn7XHcW2iMmD4hDrArAnP6jDU=
 github.com/kataras/pio v0.0.13 h1:x0rXVX0fviDTXOOLOmr4MUxOabu1InVSTu5itF8CXCM=
 github.com/kataras/pio v0.0.13/go.mod h1:k3HNuSw+eJ8Pm2lA4lRhg3DiCjVgHlP8hmXApSej3oM=
 github.com/klauspost/compress v1.17.4 h1:Ej5ixsIri7BrIjBkRZLTo6ghwrEtHFk7ijlczPW4fZ4=
@@ -128,6 +130,8 @@ golang.org/x/sys v0.15.0 h1:h48lPFYpsTvQJZF4EKyI4aLHaev3CxivZmv7yZig9pc=
 golang.org/x/sys v0.15.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=
 golang.org/x/sys v0.16.0 h1:xWw16ngr6ZMtmxDyKyIgsE93KNKz5HKmMa3b8ALHidU=
 golang.org/x/sys v0.16.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=
+golang.org/x/sys v0.47.0 h1:o7XGOvZQCADBQQ4Y7VNq2dRWQR7JmOUW8Kxx4ZsNgWs=
+golang.org/x/sys v0.47.0/go.mod h1:4GL1E5IUh+htKOUEOaiffhrAeqysfVGipDYzABqnCmw=
 golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=
 golang.org/x/term v0.0.0-20210927222741-03fcf44c2211/go.mod h1:jbD1KX2456YbFQfuXm/mYQcufACuNUgVhRMnK/tPxf8=
 golang.org/x/term v0.5.0/go.mod h1:jMB1sMXY+tzblOD4FWmEbocvup2/aLOaQEp7JmGp78k=
